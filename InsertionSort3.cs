@@ -1,24 +1,14 @@
 using System.Security.AccessControl;
-/*
-Soru: Insertion Sort Uygulaması
-
-Aşağıdaki tamsayı dizisini Insertion Sort (Eklemeli Sıralama) algoritmasını kullanarak küçükten büyüğe sıralayınız.
-
-Verilen Dizi:
-
-Dizi=[5,2,4,6,1,3]
-*/
-
 using System;
 using System.Linq;
 
-public class InsertionSort2
+public class InsertionSort3
 {
     public static void InsertionSort(int[] dizi)
     {
         int n = dizi.Length;
-        
-        for(int i=1; i<n;i++)
+
+        for(int i=1;i<n;i++)
         {
             int key = dizi[i];
             int j = i - 1;
@@ -35,7 +25,7 @@ public class InsertionSort2
     
     public static void Main(string[] args)
     {
-        int[] siralanacakDizi = {5,2,4,6,1,3};
+        int[] siralanacakDizi = {12,11,13,5,6};
         InsertionSort(siralanacakDizi);
         Console.WriteLine($"Sıralanmış Dizi: [{string.Join(", ", siralanacakDizi)}]");
     }
