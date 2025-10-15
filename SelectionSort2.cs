@@ -30,6 +30,18 @@ public class SelectionSort2
             }
         }
         
-        if(MinIndex)
+        if(MinIndex != i)
+        {
+            int temp = dizi[i];
+            dizi[i] = dizi[MinIndex];
+            dizi[MinIndex] = temp;
+        }
+        Console.WriteLine($"Sıralanmış Dizi: [{string.Join(", ", dizi)}]");
+    }
+    
+    public static void Main(string[] args)
+    {
+        int[] SiralanacakDizi = {14,33,27,10,35,19};
+        SelectionSort(SiralanacakDizi);
     }
 }
