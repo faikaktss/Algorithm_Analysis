@@ -38,3 +38,5 @@ public class SelectionSort
         SelectionSort(siralanacakDizi);
     }
 }
+
+
