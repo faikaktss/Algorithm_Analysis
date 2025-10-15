@@ -7,10 +7,10 @@ public class InsertionSort
     {
         int n = dizi.Length;
         
-        for(int i=0; i<n; i++)
+        for(int i=1; i<n; i++) // ilk eleman sıralanmış olarak kabuk edilir(faik)
         {
-            int key = dizi[i];
-            int j = i - 1;
+            int key = dizi[i]; // Bir anahtar belirlemek zorundayız(faik)
+            int j = i - 1; // Anahtardan bir önceki kısmı alıyoruz(faik)
             
             while(j>=0 && dizi[j] >key)
             {
