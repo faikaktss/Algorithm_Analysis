@@ -33,5 +33,9 @@ public class ShellSıralaması
             int[] sayilar = {12, 34, 54, 2, 3};
             ShellSort(sayilar);
             Console.WriteLine($"Sıralanmış Dizi: [{string.Join(", ", sayilar)}]");
-        }
+        } 
 }
+
+
+
+
